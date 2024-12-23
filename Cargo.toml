@@ -1,0 +1,20 @@
+[package]
+name = "rust_ecal_example"
+version = "0.1.0"
+edition = "2021"
+
+
+[[bin]]
+name = "sample_publisher"
+src = "src/sample_publisher/main.rs"
+
+[[bin]]
+name = "sample_subscriber"
+src = "src/sample_subscriber/main.rs"
+
+[dependencies]
+ecal = "0.1"
+prost = "0.11"
+
+[build-dependencies]
+prost-build = "0.11"
